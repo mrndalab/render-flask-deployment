@@ -3,7 +3,7 @@ from nsedata import eq_opt_ltp
 
 app = Flask(__name__)
 
-my_variable=eq_opt_ltp('WIPR0', 230, '29-May-2025', 'PE')
+my_variable=eq_opt_ltp("WIPR0", 230, '29-May-2025', 'PE')
 
 html_content = """
     <!DOCTYPE html>
