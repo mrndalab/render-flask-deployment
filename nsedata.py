@@ -34,7 +34,7 @@ indc="NIFTY"
 eq='SBIN'
 #print(nse_indc_option(indc))
 
-# print(nse_eq_option("WIPRO")['records']['data'][0]['PE'].keys())
+print(nse_eq_option("WIPRO")['records']['data'][0]['PE'].keys())
 
 # print(nse_urlfetch(f"https://www.nseindia.com/api/option-chain-indices?equities=SBIN","https://www.nseindia.com/option-chain").json())
 
