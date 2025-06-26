@@ -13,7 +13,7 @@ html_content = """
     </head>
     <body>
         <h1>Akshat's Flask App</h1>
-        <p>{{ my_variable }}</p>
+        <!-- <p>{{ my_variable }}</p> -->
     </body>
     </html>
     """
