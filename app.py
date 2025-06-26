@@ -3,7 +3,8 @@ from nsedata import eq_opt_ltp
 
 app = Flask(__name__)
 
-my_variable=eq_opt_ltp("WIPR0", 230, '29-May-2025', 'PE')
+<!-- my_variable=eq_opt_ltp("WIPR0", 230, '29-May-2025', 'PE') -->
+my_variable="DATA"
 
 html_content = """
     <!DOCTYPE html>
@@ -17,10 +18,11 @@ html_content = """
     </body>
     </html>
     """
+port = int(os.environ.get("PORT", 5000))
 
 @app.route("/", methods=['GET'])
 def home():
     return render_template_string(html_content, my_variable=my_variable)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0', port=port)
